@@ -32,4 +32,5 @@ RUN apk --purge del .build-deps
 
 COPY . /code/
 
+RUN python seed.py
 CMD ["chmod", "+x", "/code/init-app.sh"]
