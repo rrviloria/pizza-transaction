@@ -1,7 +1,7 @@
 from rest_framework.serializers import \
     Serializer, CharField, DecimalField, ModelSerializer
 
-from pizza_transaction.transactions.models import \
+from api.transactions.models import \
     Product, Transaction
 
 

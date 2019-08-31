@@ -16,7 +16,7 @@ Including another URLconf
 from django.urls import include, path
 from rest_framework import routers
 
-from pizza_transaction.transactions import views
+from api.transactions import views
 
 
 router = routers.DefaultRouter()

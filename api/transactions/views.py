@@ -11,10 +11,10 @@ from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
 
-from pizza_transaction.transactions.mixins import \
+from api.transactions.mixins import \
     MultiSerializerViewSetMixin
-from pizza_transaction.transactions.models import Product, Transaction
-from pizza_transaction.transactions.serializers import ProductSerializer, \
+from api.transactions.models import Product, Transaction
+from api.transactions.serializers import ProductSerializer, \
     TransactionSerializer, ProductSummarySerializer, CitySummarySerializer
 
 
