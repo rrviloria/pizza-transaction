@@ -13,25 +13,25 @@ django.setup()
 from api.transactions.models import Product, Transaction
 
 cities = (
-	'Makati City',
-	'Pasig City',
-	'Pasay City',
-	'Marikina City'
+    'Makati City',
+    'Pasig City',
+    'Pasay City',
+    'Marikina City'
 )
 product_names = (
-	'Cheese Classic',
-	'Hawaiian Overload',
-	'Bacon Overload',
-	'Veggies & Cheese Overload'
+    'Cheese Classic',
+    'Hawaiian Overload',
+    'Bacon Overload',
+    'Veggies & Cheese Overload'
 )
 
 products = []
 for name in product_names:
-	product = Product.objects.create(
-		name=name,
-		city=cities[random.randint(0, len(cities) - 1)]
-	)
-	products.append(product)
+    product = Product.objects.create(
+        name=name,
+        city=cities[random.randint(0, len(cities) - 1)]
+    )
+    products.append(product)
 
 seeder = Seed.seeder()
 start = datetime.now()
