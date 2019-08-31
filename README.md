@@ -30,15 +30,20 @@ DB_PORT=5432
 4) visit `http://localhost:8080`
 
 ## Running seed
-Instructions on how to seed data can be seen here:
+Instructions on how to set initial data can be seen here:
 
+https://github.com/rrviloria/pizza-transaction/wiki/Setting-initial-data
 
 ## Running tests
 Instructions on how to seed data can be seen here:
 
+https://github.com/rrviloria/pizza-transaction/wiki/Running-tests
+
 
 ## REST APIs
 Instructions on how to query REST APIs can be seen here:
+
+https://github.com/rrviloria/pizza-transaction/wiki/REST-APIs
 
 
 ## Additional information
