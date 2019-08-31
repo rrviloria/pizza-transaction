@@ -1,0 +1,11 @@
+*.swp
+*.swo
+*.pyc
+*.DS_Store
+postgres-data/
+
+
+# IDE
+.vscode/
+.idea/
+
