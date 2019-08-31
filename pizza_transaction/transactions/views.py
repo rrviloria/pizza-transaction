@@ -11,9 +11,10 @@ from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
 
-from services.transactions.mixins import MultipleSerializerViewSetMixin
-from services.transactions.models import Product, Transaction
-from services.transactions.serializers import ProductSerializer, \
+from pizza_transaction.transactions.mixins import \
+    MultiSerializerViewSetMixin
+from pizza_transaction.transactions.models import Product, Transaction
+from pizza_transaction.transactions.serializers import ProductSerializer, \
     TransactionSerializer, ProductSummarySerializer, CitySummarySerializer
 
 
@@ -26,7 +27,7 @@ class ProductViewSet(viewsets.ModelViewSet):
 
 
 class TransactionViewSet(
-        MultipleSerializerViewSetMixin,
+        MultiSerializerViewSetMixin,
         viewsets.ModelViewSet):
     """
     API endpoint that allows transactions to be viewed or edited.

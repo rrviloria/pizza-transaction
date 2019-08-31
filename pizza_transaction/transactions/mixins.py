@@ -1,5 +1,5 @@
 
-class MultipleSerializerViewSetMixin(object):
+class MultiSerializerViewSetMixin(object):
 
     def get_serializer_class(self):
         """
@@ -8,15 +8,15 @@ class MultipleSerializerViewSetMixin(object):
         i.e.:
 
         class MyViewSet(MultiSerializerViewSetMixin, ViewSet):
-                serializer_class = MyDefaultSerializer
-                serializer_action_classes = {
-                        'list': MyListSerializer,
-                        'my_action': MyActionSerializer,
-                }
+            serializer_class = MyDefaultSerializer
+            serializer_action_classes = {
+                    'list': MyListSerializer,
+                    'my_action': MyActionSerializer,
+            }
 
-                @action
-                def my_action:
-                ...
+            @action
+            def my_action:
+            ...
 
         If there's no entry for that action then just fallback to the regular
         get_serializer_class lookup: self.serializer_class, DefaultSerializer.

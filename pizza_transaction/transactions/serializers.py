@@ -1,17 +1,19 @@
-from rest_framework.serializers import HyperlinkedModelSerializer, \
-    Serializer, CharField, DecimalField
+from rest_framework.serializers import \
+    Serializer, CharField, DecimalField, ModelSerializer
 
-from services.transactions.models import Product, Transaction
+from pizza_transaction.transactions.models import \
+    Product, Transaction
 
 
-class ProductSerializer(HyperlinkedModelSerializer):
+class ProductSerializer(ModelSerializer):
 
     class Meta:
         model = Product
         fields = ('id', 'name', 'city',)
 
 
-class TransactionSerializer(HyperlinkedModelSerializer):
+class TransactionSerializer(ModelSerializer):
+    product = CharField(source='product.name')
 
     class Meta:
         model = Transaction

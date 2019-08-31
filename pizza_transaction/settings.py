@@ -32,10 +32,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
 
-    'api',  # main app with all the configs, etc.
+    'pizza_transaction',  # main app with all the configs, etc.
 
     # services:
-    'services.transactions',
+    'pizza_transaction.transactions',
 
     # 3rd party apps:
     'rest_framework',
@@ -52,8 +52,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'api.urls'
-WSGI_APPLICATION = 'api.wsgi.application'
+ROOT_URLCONF = 'pizza_transaction.urls'
+WSGI_APPLICATION = 'pizza_transaction.wsgi.application'
 
 
 # Database

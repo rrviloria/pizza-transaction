@@ -13,6 +13,9 @@ This was initially created using:
 
 
 1) Clone this repo
+```
+git clone https://github.com/rrviloria/pizza-transaction.git
+```
 2) In the main directory (`manage.py` current directory) create a `.env` file with the following contents:
 
 ```
@@ -21,7 +24,6 @@ DB_NAME=postgres
 DB_USER=postgres
 DB_HOST=db
 DB_PORT=5432
-
 ```
 
 3) run `docker-compose up`
