@@ -11,7 +11,7 @@ This was initially created using:
 * Docker version 17.12.0
 * docker-compose version 1.18.0
 
-
+## Setup environment
 1) Clone this repo
 ```
 git clone https://github.com/rrviloria/pizza-transaction.git
