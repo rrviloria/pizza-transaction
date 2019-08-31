@@ -34,8 +34,13 @@ Instructions on how to set initial data can be seen here:
 
 https://github.com/rrviloria/pizza-transaction/wiki/Setting-initial-data
 
+## Running PEP8 check
+Instructions on how to run PEP8 check(lint):
+
+https://github.com/rrviloria/pizza-transaction/wiki/Running-PEP8-lint
+
 ## Running tests
-Instructions on how to seed data can be seen here:
+Instructions on how to run tests:
 
 https://github.com/rrviloria/pizza-transaction/wiki/Running-tests
 
