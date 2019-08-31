@@ -13,7 +13,7 @@ services:
     build: .
     restart: always
     #Use pipenv's Python (which is Dockerfile's Python):
-    command: ["/code/wait-for-postgres.sh", "pipenv", "run", "python", "/code/manage.py", "runserver", "0.0.0.0:8080"]
+    command: ["/code/init-app.sh", "pipenv", "run", "python", "/code/manage.py", "runserver", "0.0.0.0:8080"]
     volumes:
       - .:/code
     ports:

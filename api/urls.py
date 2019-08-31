@@ -25,5 +25,7 @@ router.register(r'transactions', views.TransactionViewSet)
 
 
 urlpatterns = [
+	# we can add `/assignment/*` on path
+	# but on this case I choose not to add it
     path('', include(router.urls)),
 ]

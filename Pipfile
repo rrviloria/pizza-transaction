@@ -1,4 +1,4 @@
-[[source]] # Here goes your package sources (where you are downloading your packages from).
+it d[[source]] # Here goes your package sources (where you are downloading your packages from).
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
@@ -6,10 +6,10 @@ name = "pypi"
 [packages] # Here goes your package requirements for running the application and its versions (which packages you will use when running the application).
 django = "==2.2.3"  # use latest version
 psycopg2 = "==2.8.3"
-djangorestframework = "*"
-markdown = "*"
-django-filter = "*"
-django-seed = "*"
+djangorestframework = "==3.10.2"
+markdown = "==3.1.1"
+# django-filter = "*"
+# django-seed = "*"
 
 [dev-packages] # Here goes your package requirements for developing the application and its versions (which packaes you will use when developing the application)
 ipdb = "*"

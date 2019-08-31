@@ -3,7 +3,7 @@ ENV PYTHONUNBUFFERED 1
 
 RUN apk add --no-cache bash
 
-#this is required by 'wait-for-postgres' (psql):
+#this is required by 'init-app.sh' (psql):
 RUN apk add postgresql-client
 
 #We need to add some additional postgreSQL libs because Alphine doesn't have them:
@@ -32,4 +32,4 @@ RUN apk --purge del .build-deps
 
 COPY . /code/
 
-CMD ["chmod", "+x", "/code/wait-for-postgres.sh"]
+CMD ["chmod", "+x", "/code/init-app.sh"]

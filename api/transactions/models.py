@@ -24,7 +24,6 @@ class Transaction(models.Model):
     )
     product = models.ForeignKey(
         Product,
-        # related_name='transaction_product',
         on_delete=models.CASCADE,
         help_text='Transaction product',
     )

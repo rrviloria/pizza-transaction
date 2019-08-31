@@ -60,8 +60,9 @@ class TransactionViewSet(
         url_path='products/summary/(?P<last_n_days>[0-9]+)')
     def product_summary(self, request, last_n_days):
         """
+        Returns total amount per product within the given last days.
         Equivalent of API
-        /assignment/transactionSummaryByProducts/{last_n_days}
+        `/assignment/transactionSummaryByProducts/{last_n_days}`
         """
         return self._create_summary_response('product__name', last_n_days)
 
@@ -71,7 +72,8 @@ class TransactionViewSet(
         url_path='manufacturing-cities/summary/(?P<last_n_days>[0-9]+)')
     def manufacturing_city_summary(self, request, last_n_days):
         """
+        Returns total amount per city within the given last days.
         Equivalent of API
-        /assignment/transactionSummaryByManufacturingCity/{last_n_days}
+        `/assignment/transactionSummaryByManufacturingCity/{last_n_days}`
         """
         return self._create_summary_response('product__city', last_n_days)

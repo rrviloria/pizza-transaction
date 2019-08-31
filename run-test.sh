@@ -1,5 +1,7 @@
 #!/bin/sh
 # run-test.sh
 
-echo "Testing..."
-docker exec -it pizza_web_1 pipenv run python manage.py test
+# Shell script for running tests inside a container
+
+>&2 echo "\n\n\n*** Running tests ***\n\n\n"
+docker exec -it pizzatransaction_web_1 pipenv run python manage.py test -v 2
