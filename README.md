@@ -12,11 +12,14 @@ This was initially created using:
 * docker-compose version 1.18.0
 
 ## Setup environment
-1) Clone this repo
+1) Install docker. **If you have docker already installed please skip this step**. Installation guide can be seen here
+https://docs.docker.com/install/
+
+2) Clone this repo
 ```
 git clone https://github.com/rrviloria/pizza-transaction.git
 ```
-2) In the main directory (`manage.py` current directory) create a `.env` file with the following contents:
+3) In the main directory (`manage.py` current directory) create a `.env` file with the following contents:
 
 ```
 DB_ENGINE=django.db.backends.postgresql
@@ -26,8 +29,8 @@ DB_HOST=db
 DB_PORT=5432
 ```
 
-3) run `docker-compose up`
-4) visit `http://localhost:8080`
+4) run `docker-compose up`
+5) visit `http://localhost:8080`
 
 ## Running seed
 Instructions on how to set initial data can be seen here:
